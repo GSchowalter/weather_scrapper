@@ -38,7 +38,7 @@ result['humidity'] = soup.find("span", attrs={"id": "wob_hm"}).text
 result['wind'] = soup.find("span", attrs={"id": "wob_ws"}).text
 
 # create output file
-f = open('HBurgWeather', 'w')
+f = open('HBurgWeather.txt', 'w')
 
 f.write("Temperature:\t{}\n".format(result['temp_now']))
 f.write("Time:\t{}\n".format(result['dayhour']))
